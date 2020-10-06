@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+/* css veriables */
+:root {
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+  --PaleBlue: hsl(243, 100%, 93%);
+  --GrayishBlue: hsl(229, 7%, 55%);
+  --DarkBlue: hsl(228, 56%, 26%);
+  --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  background-color: var(--VeryDarkBlue);
+  font-family: "Raleway", sans-serif;
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+/* main container style */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+/* left box style */
+.left-box {
+  position: absolute;
+  background-color: var(--DarkBlue);
+  width: 350px;
+  height: 200px;
+  left: 20%;
+  top: 33%;
+  padding-left: 50px;
+  color: var(--GrayishBlue);
+  border-radius: 10px;
+  border-top-right-radius: 80px;
+  margin-right: 30px;
+}
+/* main logo style */
+.main-logo {
+  position: absolute;
+
+  margin-top: 30px;
+}
+/* icons container */
+.icons-container {
+  position: relative;
+
+  display: flex;
+  top: 50%;
+}
+.icon {
+  background-color: var(--VeryDarkBlue);
+  color: var(--DarkBlue);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* right box style */
+.right-box {
+  position: absolute;
+  background-color: var(--DarkBlue);
+  color: var(--PaleBlue);
+  width: 550px;
+  height: 150px;
+  left: 40%;
+  margin-left: 100px;
+  border-radius: 10px;
+  top: 40%;
+}
+/* right box text */
+.right-box p {
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 40px;
+}
+.gb {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* progress bar style */
+
+.available-gb-bar {
+  height: 15px;
+  position: relative;
+  margin: 0 auto;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  margin: 20px 50px 0 40px;
+}
+.used-gb-bar {
+  width: 80%;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  height: 15px;
+  border-radius: 10px;
+}
+.gb-bar-toggle-button {
+  background-color: white;
+  float: right;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+/* ponint style */
+.point {
+  padding-top: 10px;
+  margin-left: 40px;
+}
+.point2 {
+  text-align: right;
+  margin-left: 400px;
+}
+/* pop up style */
+.pop-up {
+  position: absolute;
+  background-color: #ffffff;
+  width: 168px;
+  left: 70%;
+  top: 35%;
+  height: 68px;
+  border-radius: 10px 10px 0 10px;
+  text-align: center;
+  padding: 10px 10px;
+}
+.pop-up::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -8px;
+  margin-bottom: -23px;
+}
+.bolder {
+  font-weight: 700;
+  font-size: 35px;
+}
+/* footer  */
+.attribution {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  font-size: 11px;
+  text-align: center;
+  color: #ffffff;
+}
+.attribution a {
+  color: #ffffff;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+    background-color: var(--VeryDarkBlue);
+    font-family: "Raleway", sans-serif;
+    background-image: url("./images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+  }
+  /* main container style */
+  .container {
+    margin-bottom: 30px;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+  /* left box style */
+  .left-box {
+    background-color: var(--DarkBlue);
+    width: 350px;
+    height: 200px;
+
+    color: var(--GrayishBlue);
+    border-radius: 10px;
+    border-top-right-radius: 80px;
+    margin-right: 30px;
+  }
+  /* main logo style */
+  .main-logo {
+    position: absolute;
+    margin-top: 30px;
+  }
+  /* icons container */
+  .icons-container {
+    position: relative;
+    display: flex;
+    top: 50%;
+  }
+  .icon {
+    background-color: var(--VeryDarkBlue);
+    color: var(--DarkBlue);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  /* right box style */
+  .right-box {
+    position: absolute;
+    background-color: var(--DarkBlue);
+    color: var(--PaleBlue);
+    top: 50%;
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+  }
+
+  /* footer  */
+  .attribution {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    font-size: 11px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .attribution a {
+    color: #ffffff;
+  }
+} ;
